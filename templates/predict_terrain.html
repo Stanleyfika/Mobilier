@@ -4,112 +4,108 @@
   <meta charset="UTF-8">
   <title>{{ _('Critères Terrain à vendre') }}</title>
 
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.20/dist/full.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#4f46e5',
+            secondary: '#f43f5e'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Leaflet CSS & JS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
 
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f9f9f9;
-    }
-    form {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      max-width: 500px;
-      margin: auto;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    label {
-      display: block;
-      margin-top: 15px;
-    }
-    input, select {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-    }
-    button {
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #28a745;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #218838;
-    }
     #map {
       height: 300px;
-      margin-top: 15px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
+      border-radius: 0.5rem;
+      overflow: hidden;
     }
   </style>
 </head>
-<body>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center px-4 py-8">
 
-  <h2 style="text-align:center;">{{ _('Formulaire Critères Terrain à Vendre') }}</h2>
+  <div class="w-full max-w-2xl bg-white shadow-xl rounded-xl p-8 space-y-6">
+    <h1 class="text-2xl font-bold text-center text-primary">{{ _('Formulaire Critères Terrain à Vendre') }}</h1>
 
-  <form action="{{ url_for('predict.predict_terrain') }}" method="post">
+    <form action="{{ url_for('predict.predict_terrain') }}" method="post" class="space-y-4">
+      <div class="form-control">
+        <label for="surface" class="label"><span class="label-text">{{ _('Surface (en m²) :') }}</span></label>
+        <input type="number" id="surface" name="surface" min="0" required class="input input-bordered w-full" />
+      </div>
 
-    <label for="surface">{{ _('Surface (en m²) :') }}</label>
-    <input type="number" id="surface" name="surface" min="0" required>
+      <div class="form-control">
+        <label for="acces" class="label"><span class="label-text">{{ _('Accès :') }}</span></label>
+        <select id="acces" name="acces" required class="select select-bordered w-full">
+          <option value="">{{ _('-- Sélectionner --') }}</option>
+          <option value="0">{{ _('Aucun') }}</option>
+          <option value="1">{{ _('Moto') }}</option>
+          <option value="2">{{ _('Voiture') }}</option>
+          <option value="3">{{ _('Voiture + parking') }}</option>
+        </select>
+      </div>
 
-    <label for="acces">{{ _('Accès :') }}</label>
-    <select id="acces" name="acces" required>
-      <option value="">{{ _('-- Sélectionner --') }}</option>
-      <option value="0">{{ _('Aucun') }}</option>
-      <option value="1">{{ _('Moto') }}</option>
-      <option value="2">{{ _('Voiture') }}</option>
-      <option value="3">{{ _('Voiture + parking') }}</option>
-    </select>
+      <div class="form-control">
+        <label for="typePapier" class="label"><span class="label-text">{{ _('Type de papier :') }}</span></label>
+        <select id="typePapier" name="typePapier" required class="select select-bordered w-full">
+          <option value="">{{ _('-- Sélectionner --') }}</option>
+          <option value="Titre Foncier">{{ _('Titre Foncier') }}</option>
+          <option value="Certificat Foncier">{{ _('Certificat Foncier') }}</option>
+          <option value="Lettre d’Attribution">{{ _('Lettre d’Attribution') }}</option>
+          <option value="Aucun">{{ _('Aucun') }}</option>
+        </select>
+      </div>
 
-    <label for="typePapier">{{ _('Type de papier :') }}</label>
-    <select id="typePapier" name="typePapier" required>
-      <option value="">{{ _('-- Sélectionner --') }}</option>
-      <option value="Titre Foncier">{{ _('Titre Foncier') }}</option>
-      <option value="Certificat Foncier">{{ _('Certificat Foncier') }}</option>
-      <option value="Lettre d’Attribution">{{ _('Lettre d’Attribution') }}</option>
-      <option value="Aucun">{{ _('Aucun') }}</option>
-    </select>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="form-control">
+          <label for="pretBatir" class="label"><span class="label-text">{{ _('Prêt à bâtir :') }}</span></label>
+          <select id="pretBatir" name="pretBatir" required class="select select-bordered w-full">
+            <option value="">{{ _('-- Sélectionner --') }}</option>
+            <option value="Oui">{{ _('Oui') }}</option>
+            <option value="Non">{{ _('Non') }}</option>
+          </select>
+        </div>
 
-    <label for="pretBatir">{{ _('Prêt à bâtir :') }}</label>
-    <select id="pretBatir" name="pretBatir" required>
-      <option value="">{{ _('-- Sélectionner --') }}</option>
-      <option value="Oui">{{ _('Oui') }}</option>
-      <option value="Non">{{ _('Non') }}</option>
-    </select>
+        <div class="form-control">
+          <label for="cloture" class="label"><span class="label-text">{{ _('Clôturé :') }}</span></label>
+          <select id="cloture" name="cloture" required class="select select-bordered w-full">
+            <option value="">{{ _('-- Sélectionner --') }}</option>
+            <option value="Oui">{{ _('Oui') }}</option>
+            <option value="Non">{{ _('Non') }}</option>
+          </select>
+        </div>
+      </div>
 
-    <label for="cloture">{{ _('Clôturé :') }}</label>
-    <select id="cloture" name="cloture" required>
-      <option value="">{{ _('-- Sélectionner --') }}</option>
-      <option value="Oui">{{ _('Oui') }}</option>
-      <option value="Non">{{ _('Non') }}</option>
-    </select>
+      <div class="form-control">
+        <label class="label"><span class="label-text">{{ _('Choisir la ville sur la carte') }} :</span></label>
+        <div id="map" class="border border-gray-300"></div>
+      </div>
 
-    <label>{{ _('Choisir la ville sur la carte') }} :</label>
-    <div id="map"></div>
+      <!-- Champs cachés -->
+      <input type="hidden" id="latitude" name="latitude">
+      <input type="hidden" id="longitude" name="longitude">
 
-    <!-- Champs cachés pour latitude et longitude -->
-    <input type="hidden" id="latitude" name="latitude">
-    <input type="hidden" id="longitude" name="longitude">
-
-    <button type="submit">{{ _('Soumettre') }}</button>
-  </form>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary w-full sm:w-auto">{{ _('Soumettre') }}</button>
+      </div>
+    </form>
+  </div>
 
   <script>
-    var bounds = L.latLngBounds(
+    const bounds = L.latLngBounds(
       L.latLng(-25.6, 43.2),
       L.latLng(-11.9, 50.5)
     );
 
-    var map = L.map('map', {
+    const map = L.map('map', {
       maxBounds: bounds,
       maxBoundsViscosity: 1.0,
       minZoom: 6,
@@ -120,7 +116,7 @@
       attribution: '© OpenStreetMap contributors'
     }).addTo(map);
 
-    var marker = null;
+    let marker = null;
 
     map.on('click', function(e) {
       if (!bounds.contains(e.latlng)) {
@@ -128,8 +124,8 @@
         return;
       }
 
-      var lat = e.latlng.lat.toFixed(6);
-      var lon = e.latlng.lng.toFixed(6);
+      const lat = e.latlng.lat.toFixed(6);
+      const lon = e.latlng.lng.toFixed(6);
 
       if (marker) {
         map.removeLayer(marker);

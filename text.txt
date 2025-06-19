@@ -20,3 +20,4 @@ Bilingue:
 -pip install Flask-Babel
 -pybabel compile -d translations
 
+action="{{ url_for('predict.predict_terrain') }}" method="post"
