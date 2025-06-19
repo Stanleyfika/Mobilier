@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ get_locale() }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>{{ _('Connexion') }}</title>
+</head>
+<style>
+      #lang-menu {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        }
+</style>
+<body>
+<div id="lang-menu">
+    <form method="GET" action="{{ url_for('main.set_language') }}">
+        <select name="language" onchange="this.form.submit()">
+            <option value="fr" {% if get_locale() == 'fr' %}selected{% endif %}>Français</option>
+            <option value="mg" {% if get_locale() == 'mg' %}selected{% endif %}>Malagasy</option>
+            <option value="en" {% if get_locale() == 'en' %}selected{% endif %}>English</option>
+        </select>
+        <!-- Hidden field to maintain the current URL for redirection -->
+        <input type="hidden" name="next" value="{{ request.full_path }}">
+    </form>
+</div>
+    <h1>{{ _('Connexion') }}</h1>
+
+    <form action="/" method="post">
+
+        <label for="nom">{{ _('Pseudo') }}</label>
+        <input type="text" id="nom" name="pseudo">
+
+        <label for="mdp">{{ _('Mot de passe') }}</label>
+        <input type="password" id="mdp" name="mdp">
+
+        <input type="submit" value="{{ _('Se connecter') }}">
+    </form>          
+</body>
+</html>

@@ -1,0 +1,139 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-11 12:00+0000\n"
+"PO-Revision-Date: 2025-06-11 12:00+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: mg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Connexion"
+msgstr "Fidirana"
+
+msgid "Pseudo"
+msgstr "Anarana"
+
+msgid "Mot de passe"
+msgstr "Tenimiafina"
+
+msgid "Se connecter"
+msgstr "Hiditra"
+
+msgid "Accueil"
+msgstr "Fandraisana"
+
+msgid "MobilierBudget : choisissez ce que vous voulez chercher"
+msgstr "MobilierBudget : fidio izay tadiavinao"
+
+msgid "Terrain à vendre"
+msgstr "Tany amidy"
+
+msgid "Maison à louer"
+msgstr "Trano hofaina"
+
+
+msgid "Formulaire Critères Maison à louer"
+msgstr "Taratasy fangatahana trano hofaina"
+
+msgid "Accès"
+msgstr "Fidirana"
+
+msgid "Aucun"
+msgstr "Tsy misy"
+
+msgid "Moto"
+msgstr "Moto"
+
+msgid "Voiture"
+msgstr "Fiara"
+
+msgid "Voiture + parking"
+msgstr "Fiara sy toerana fiantsonana"
+
+msgid "Type de Maison"
+msgstr "Karazana Trano"
+
+msgid "F1 / T1 - 1 pièce principale"
+msgstr "F1 / T1 - efitra iray"
+
+msgid "F2 / T2 - 2 pièces principales"
+msgstr "F2 / T2 - efitra roa"
+
+msgid "F3 / T3 - 3 pièces principales"
+msgstr "F3 / T3 - efitra telo"
+
+msgid "F4 / T4 - 4 pièces principales"
+msgstr "F4 / T4 - efitra efatra"
+
+msgid "F5 / T5 - 5 pièces principales"
+msgstr "F5 / T5 - efitra dimy"
+
+msgid "F6 / T6 - 6 pièces principales"
+msgstr "F6 / T6 - efitra enina"
+
+
+msgid "Merci de sélectionner un emplacement à Madagascar."
+msgstr "Mifidiana toerana ao Madagasikara azafady."
+
+msgid "Soumettre"
+msgstr "Alefa"
+
+msgid "Formulaire Critères Terrain à Vendre"
+msgstr "Taratasy fepetra ho an'ny tany amidy"
+
+msgid "Surface (en m²) :"
+msgstr "Velaran-tany (m²) :"
+
+msgid "Accès :"
+msgstr "Fidirana :"
+
+msgid "-- Sélectionner --"
+msgstr "-- Fidiana --"
+
+msgid "Aucun"
+msgstr "Tsy misy"
+
+msgid "Moto"
+msgstr "Moto"
+
+msgid "Voiture"
+msgstr "Fiara"
+
+msgid "Voiture + parking"
+msgstr "Fiara + toerana fiantsonana"
+
+msgid "Type de papier :"
+msgstr "Karazana taratasy :"
+
+msgid "Titre Foncier"
+msgstr "Anarana amin’ny tany"
+
+msgid "Certificat Foncier"
+msgstr "Taratasin-tany"
+
+msgid "Lettre d’Attribution"
+msgstr "Taratasy fanomezana"
+
+msgid "Prêt à bâtir :"
+msgstr "Vonona haorina :"
+
+msgid "Oui"
+msgstr "Eny"
+
+msgid "Non"
+msgstr "Tsia"
+
+msgid "Clôturé :"
+msgstr "Voarindrina :"
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="{{ get_locale() }}">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ _('Critères Maison à louer') }}</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+</head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f4f4f4;
+    }
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #map {
+      height: 300px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<h2 style="text-align:center;">{{ _('Formulaire Critères Maison à louer') }}</h2>
+
+<form action="{{ url_for('predict.predict_maison') }}" method="post">
+
+  <label for="acces">{{ _('Accès') }} :</label>
+  <select id="acces" name="acces" required>
+    <option value="">{{ _('-- Sélectionner --') }}</option>
+    <option value="0">{{ _('Aucun') }}</option>
+    <option value="1">{{ _('Moto') }}</option>
+    <option value="2">{{ _('Voiture') }}</option>
+    <option value="3">{{ _('Voiture + parking') }}</option>
+  </select>
+
+  <label for="typeMaison">{{ _('Type de Maison') }} :</label>
+  <select id="typeMaison" name="typeMaison" required>
+    <option value="">{{ _('-- Sélectionner --') }}</option>
+    <option value="1">{{ _('F1 / T1 - 1 pièce principale') }}</option>
+    <option value="2">{{ _('F2 / T2 - 2 pièces principales') }}</option>
+    <option value="3">{{ _('F3 / T3 - 3 pièces principales') }}</option>
+    <option value="4">{{ _('F4 / T4 - 4 pièces principales') }}</option>
+    <option value="5">{{ _('F5 / T5 - 5 pièces principales') }}</option>
+    <option value="6">{{ _('F6 / T6 - 6 pièces principales') }}</option>
+  </select>
+
+  <label for="type">{{ _('Type') }} :</label>
+  <select id="type" name="type" required>
+    <option value="">{{ _('-- Sélectionner --') }}</option>
+    <option value="0">{{ _('Appartement') }}</option>
+    <option value="1">{{ _('Maison') }}</option>
+  </select>
+
+  <label for="toilette">{{ _('Douche ou Toilette intérieure') }} :</label>
+  <select id="toilette" name="toilette" required>
+    <option value="">{{ _('-- Sélectionner --') }}</option>
+    <option value="0">{{ _('Oui') }}</option>
+    <option value="1">{{ _('Non') }}</option>
+    <option value="Aucune">{{ _('Aucune') }}</option>
+  </select>
+
+  <label for="nbChambres">{{ _('Nombre de Chambres') }} :</label>
+  <input type="number" id="nbChambres" name="nbChambres" min="1" required>
+
+  <label>{{ _('Choisir la ville sur la carte') }} :</label>
+  <div id="map"></div>
+
+  <!-- Champs cachés pour latitude et longitude -->
+  <input type="hidden" id="latitude" name="latitude">
+  <input type="hidden" id="longitude" name="longitude">
+
+  <button type="submit">{{ _('Soumettre') }}</button>
+</form>
+
+<script>
+  var bounds = L.latLngBounds(
+    L.latLng(-25.6, 43.2),
+    L.latLng(-11.9, 50.5)
+  );
+
+  var map = L.map('map', {
+    maxBounds: bounds,
+    maxBoundsViscosity: 1.0,
+    minZoom: 6,
+    maxZoom: 16
+  }).setView([-18.8792, 47.5079], 6);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+  }).addTo(map);
+
+  var marker = null;
+
+  map.on('click', function(e) {
+    if (!bounds.contains(e.latlng)) {
+      alert("{{ _('Merci de sélectionner un emplacement à Madagascar.') }}");
+      return;
+    }
+
+    var lat = e.latlng.lat.toFixed(6);
+    var lon = e.latlng.lng.toFixed(6);
+
+    if (marker) {
+      map.removeLayer(marker);
+    }
+
+    marker = L.marker([lat, lon]).addTo(map)
+      .bindPopup("{{ _('Position sélectionnée') }}: " + lat + ", " + lon)
+      .openPopup();
+    
+    document.getElementById('latitude').value = lat;
+    document.getElementById('longitude').value = lon;
+  });
+</script>
+</body>
+</html>

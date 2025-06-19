@@ -1,0 +1,6 @@
+surface,acces,typePapier,pretBatir,cloture,latitude,longitude,prix
+500,2,Titre Foncier,Oui,Non,-18.8792,47.5079,150000000
+300,1,Certificat Foncier,Non,Oui,-18.9000,47.5200,80000000
+1000,3,Titre Foncier,Oui,Oui,-18.8500,47.4800,350000000
+250,0,Lettre d'Attribution,Non,Non,-19.8739,47.0319,45000000
+750,2,Titre Foncier,Oui,Non,-18.1492,49.4042,180000000

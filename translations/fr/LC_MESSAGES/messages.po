@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-11 12:00+0000\n"
+"PO-Revision-Date: 2025-06-11 12:00+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: mg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+
+msgid "Connexion"
+msgstr "Connexion"
+
+msgid "Pseudo"
+msgstr "Pseudo"
+
+msgid "Mot de passe"
+msgstr "Mot de passe"
+
+msgid "Se connecter"
+msgstr "Se connecter"
+
+msgid "Accueil"
+msgstr "Accueil"
+
+msgid "MobilierBudget : choisissez ce que vous voulez chercher"
+msgstr "MobilierBudget : choisissez ce que vous voulez chercher"
+
+msgid "Terrain à vendre"
+msgstr "Terrain à vendre"
+
+msgid "Maison à louer"
+msgstr "Maison à louer"
+
