@@ -1,147 +1,183 @@
 <!DOCTYPE html>
-<html lang="{{ get_locale() }}">
+<html lang="{{ get_locale() }}" data-theme="light">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ _('Critères Maison à louer') }}</title>
+  <!-- DaisyUI & Tailwind -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
-  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
-</head>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f4f4f4;
+    .form-section {
+      transition: all 0.3s ease;
     }
-    form {
-      background-color: white;
-      padding: 20px;
-      border-radius: 8px;
-      max-width: 500px;
-      margin: auto;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    label {
-      display: block;
-      margin-top: 15px;
-    }
-    input, select {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-    }
-    button {
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #007BFF;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #0056b3;
+    .form-section:hover {
+      transform: translateY(-2px);
     }
     #map {
-      height: 300px;
-      margin-top: 10px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+    .map-container {
+      position: relative;
+    }
+    .map-label {
+      position: absolute;
+      top: -10px;
+      left: 15px;
+      background: white;
+      padding: 0 8px;
+      z-index: 1000;
+      font-size: 0.875rem;
+      color: #4b5563;
     }
   </style>
 </head>
-<body>
+<body class="bg-gradient-to-br from-blue-50 to-purple-50 min-h-screen py-12 px-4">
+  <div class="max-w-3xl mx-auto">
+    <!-- Header -->
+    <div class="text-center mb-10">
+      <div class="w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+        <i class="fas fa-home text-white text-3xl"></i>
+      </div>
+      <h1 class="text-3xl font-bold text-gray-800">{{ _('Critères Maison à louer') }}</h1>
+      <p class="text-gray-600 mt-2">{{ _('Remplissez les détails pour trouver la maison parfaite') }}</p>
+    </div>
 
-<h2 style="text-align:center;">{{ _('Formulaire Critères Maison à louer') }}</h2>
+    <!-- Formulaire -->
+    <form action="{{ url_for('predict.predict_maison') }}" method="post" class="bg-white rounded-2xl shadow-xl overflow-hidden">
+      <div class="p-8 space-y-6">
+        <!-- Section Accès -->
+        <div class="form-section">
+          <label class="block text-sm font-medium text-gray-700 mb-1">
+            <i class="fas fa-car mr-2 text-blue-500"></i> {{ _('Accès') }}
+          </label>
+          <select id="acces" name="acces" class="select select-bordered w-full focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+            <option disabled selected>{{ _('-- Sélectionner --') }}</option>
+            <option value="0">{{ _('Aucun') }}</option>
+            <option value="1">{{ _('Moto') }}</option>
+            <option value="2">{{ _('Voiture') }}</option>
+            <option value="3">{{ _('Voiture + parking') }}</option>
+          </select>
+        </div>
 
-<form action="{{ url_for('predict.predict_maison') }}" method="post">
+        <!-- Section Type de Maison -->
+        <div class="form-section">
+          <label class="block text-sm font-medium text-gray-700 mb-1">
+            <i class="fas fa-door-open mr-2 text-blue-500"></i> {{ _('Type de Maison') }}
+          </label>
+          <select id="typeMaison" name="typeMaison" class="select select-bordered w-full" required>
+            <option disabled selected>{{ _('-- Sélectionner --') }}</option>
+            <option value="1">{{ _('F1 / T1 - 1 pièce principale') }}</option>
+            <option value="2">{{ _('F2 / T2 - 2 pièces principales') }}</option>
+            <option value="3">{{ _('F3 / T3 - 3 pièces principales') }}</option>
+            <option value="4">{{ _('F4 / T4 - 4 pièces principales') }}</option>
+            <option value="5">{{ _('F5 / T5 - 5 pièces principales') }}</option>
+            <option value="6">{{ _('F6 / T6 - 6 pièces principales') }}</option>
+          </select>
+        </div>
 
-  <label for="acces">{{ _('Accès') }} :</label>
-  <select id="acces" name="acces" required>
-    <option value="">{{ _('-- Sélectionner --') }}</option>
-    <option value="0">{{ _('Aucun') }}</option>
-    <option value="1">{{ _('Moto') }}</option>
-    <option value="2">{{ _('Voiture') }}</option>
-    <option value="3">{{ _('Voiture + parking') }}</option>
-  </select>
+        <!-- Section Type -->
+        <div class="form-section">
+          <label class="block text-sm font-medium text-gray-700 mb-1">
+            <i class="fas fa-building mr-2 text-blue-500"></i> {{ _('Type') }}
+          </label>
+          <select id="type" name="type" class="select select-bordered w-full" required>
+            <option disabled selected>{{ _('-- Sélectionner --') }}</option>
+            <option value="0">{{ _('Appartement') }}</option>
+            <option value="1">{{ _('Maison') }}</option>
+          </select>
+        </div>
 
-  <label for="typeMaison">{{ _('Type de Maison') }} :</label>
-  <select id="typeMaison" name="typeMaison" required>
-    <option value="">{{ _('-- Sélectionner --') }}</option>
-    <option value="1">{{ _('F1 / T1 - 1 pièce principale') }}</option>
-    <option value="2">{{ _('F2 / T2 - 2 pièces principales') }}</option>
-    <option value="3">{{ _('F3 / T3 - 3 pièces principales') }}</option>
-    <option value="4">{{ _('F4 / T4 - 4 pièces principales') }}</option>
-    <option value="5">{{ _('F5 / T5 - 5 pièces principales') }}</option>
-    <option value="6">{{ _('F6 / T6 - 6 pièces principales') }}</option>
-  </select>
+        <!-- Section Toilette -->
+        <div class="form-section">
+          <label class="block text-sm font-medium text-gray-700 mb-1">
+            <i class="fas fa-toilet mr-2 text-blue-500"></i> {{ _('Douche ou Toilette intérieure') }}
+          </label>
+          <select id="toilette" name="toilette" class="select select-bordered w-full" required>
+            <option disabled selected>{{ _('-- Sélectionner --') }}</option>
+            <option value="0">{{ _('Oui') }}</option>
+            <option value="1">{{ _('Non') }}</option>
+            <option value="Aucune">{{ _('Aucune') }}</option>
+          </select>
+        </div>
 
-  <label for="type">{{ _('Type') }} :</label>
-  <select id="type" name="type" required>
-    <option value="">{{ _('-- Sélectionner --') }}</option>
-    <option value="0">{{ _('Appartement') }}</option>
-    <option value="1">{{ _('Maison') }}</option>
-  </select>
+        <!-- Section Nombre de Chambres -->
+        <div class="form-section">
+          <label class="block text-sm font-medium text-gray-700 mb-1">
+            <i class="fas fa-bed mr-2 text-blue-500"></i> {{ _('Nombre de Chambres') }}
+          </label>
+          <input type="number" id="nbChambres" name="nbChambres" min="1" 
+                 class="input input-bordered w-full" 
+                 placeholder="{{ _('Ex: 2') }}" required>
+        </div>
 
-  <label for="toilette">{{ _('Douche ou Toilette intérieure') }} :</label>
-  <select id="toilette" name="toilette" required>
-    <option value="">{{ _('-- Sélectionner --') }}</option>
-    <option value="0">{{ _('Oui') }}</option>
-    <option value="1">{{ _('Non') }}</option>
-    <option value="Aucune">{{ _('Aucune') }}</option>
-  </select>
+        <!-- Section Carte -->
+        <div class="form-section map-container">
+          <span class="map-label">
+            <i class="fas fa-map-marker-alt mr-1 text-blue-500"></i> {{ _('Choisir la ville sur la carte') }}
+          </span>
+          <div id="map" class="h-64 w-full mt-4"></div>
+          <input type="hidden" id="latitude" name="latitude">
+          <input type="hidden" id="longitude" name="longitude">
+        </div>
 
-  <label for="nbChambres">{{ _('Nombre de Chambres') }} :</label>
-  <input type="number" id="nbChambres" name="nbChambres" min="1" required>
+        <!-- Bouton Soumettre -->
+        <div class="pt-6">
+          <button type="submit" class="btn btn-primary w-full gap-2">
+            {{ _('Trouver ma maison') }}
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
 
-  <label>{{ _('Choisir la ville sur la carte') }} :</label>
-  <div id="map"></div>
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+  <script>
+    var bounds = L.latLngBounds(
+      L.latLng(-25.6, 43.2),
+      L.latLng(-11.9, 50.5)
+    );
 
-  <!-- Champs cachés pour latitude et longitude -->
-  <input type="hidden" id="latitude" name="latitude">
-  <input type="hidden" id="longitude" name="longitude">
+    var map = L.map('map', {
+      maxBounds: bounds,
+      maxBoundsViscosity: 1.0,
+      minZoom: 6,
+      maxZoom: 16
+    }).setView([-18.8792, 47.5079], 6);
 
-  <button type="submit">{{ _('Soumettre') }}</button>
-</form>
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
 
-<script>
-  var bounds = L.latLngBounds(
-    L.latLng(-25.6, 43.2),
-    L.latLng(-11.9, 50.5)
-  );
+    var marker = null;
 
-  var map = L.map('map', {
-    maxBounds: bounds,
-    maxBoundsViscosity: 1.0,
-    minZoom: 6,
-    maxZoom: 16
-  }).setView([-18.8792, 47.5079], 6);
+    map.on('click', function(e) {
+      if (!bounds.contains(e.latlng)) {
+        alert("{{ _('Merci de sélectionner un emplacement à Madagascar.') }}");
+        return;
+      }
 
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '© OpenStreetMap contributors'
-  }).addTo(map);
+      var lat = e.latlng.lat.toFixed(6);
+      var lon = e.latlng.lng.toFixed(6);
 
-  var marker = null;
+      if (marker) {
+        map.removeLayer(marker);
+      }
 
-  map.on('click', function(e) {
-    if (!bounds.contains(e.latlng)) {
-      alert("{{ _('Merci de sélectionner un emplacement à Madagascar.') }}");
-      return;
-    }
-
-    var lat = e.latlng.lat.toFixed(6);
-    var lon = e.latlng.lng.toFixed(6);
-
-    if (marker) {
-      map.removeLayer(marker);
-    }
-
-    marker = L.marker([lat, lon]).addTo(map)
-      .bindPopup("{{ _('Position sélectionnée') }}: " + lat + ", " + lon)
-      .openPopup();
-    
-    document.getElementById('latitude').value = lat;
-    document.getElementById('longitude').value = lon;
-  });
-</script>
+      marker = L.marker([lat, lon]).addTo(map)
+        .bindPopup("{{ _('Position sélectionnée') }}: " + lat + ", " + lon)
+        .openPopup();
+      
+      document.getElementById('latitude').value = lat;
+      document.getElementById('longitude').value = lon;
+    });
+  </script>
 </body>
 </html>

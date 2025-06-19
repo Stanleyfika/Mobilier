@@ -1,41 +1,101 @@
 <!DOCTYPE html>
-<html lang="{{ get_locale() }}">
+<html lang="{{ get_locale() }}" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <title>{{ _('Connexion') }}</title>
-</head>
-<style>
-      #lang-menu {
-            position: fixed;
-            top: 10px;
-            right: 10px;
+    <!-- DaisyUI via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Icônes Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .auth-container {
+            background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(245,245,255,0.9) 100%);
+            backdrop-filter: blur(10px);
         }
-</style>
-<body>
-<div id="lang-menu">
-    <form method="GET" action="{{ url_for('main.set_language') }}">
-        <select name="language" onchange="this.form.submit()">
-            <option value="fr" {% if get_locale() == 'fr' %}selected{% endif %}>Français</option>
-            <option value="mg" {% if get_locale() == 'mg' %}selected{% endif %}>Malagasy</option>
-            <option value="en" {% if get_locale() == 'en' %}selected{% endif %}>English</option>
-        </select>
-        <!-- Hidden field to maintain the current URL for redirection -->
-        <input type="hidden" name="next" value="{{ request.full_path }}">
-    </form>
-</div>
-    <h1>{{ _('Connexion') }}</h1>
+        .input-focus:focus {
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-indigo-50 to-purple-100 flex items-center justify-center p-4">
+    <!-- Menu langue -->
+    <div id="lang-menu" class="dropdown dropdown-end fixed top-4 right-4 z-50">
+        <label tabindex="0" class="btn btn-ghost btn-circle">
+            <i class="fas fa-globe text-xl"></i>
+        </label>
+        <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+            <form method="GET" action="{{ url_for('main.set_language') }}">
+                <li>
+                    <button type="submit" name="language" value="fr" class="{% if get_locale() == 'fr' %}active{% endif %}">
+                        <span>🇫🇷 Français</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="submit" name="language" value="mg" class="{% if get_locale() == 'mg' %}active{% endif %}">
+                        <span>🇲🇬 Malagasy</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="submit" name="language" value="en" class="{% if get_locale() == 'en' %}active{% endif %}">
+                        <span>🇬🇧 English</span>
+                    </button>
+                </li>
+                <input type="hidden" name="next" value="{{ request.full_path }}">
+            </form>
+        </ul>
+    </div>
 
-    <form action="/" method="post">
+    <!-- Container principal -->
+    <div class="auth-container shadow-2xl rounded-2xl overflow-hidden w-full max-w-md">
+        <div class="card-body p-8">
+            <!-- Logo/Titre -->
+            <div class="text-center mb-8">
+                <div class="w-16 h-16 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-user-lock text-white text-2xl"></i>
+                </div>
+                <h1 class="text-3xl font-bold text-gray-800">{{ _('Connexion') }}</h1>
+               
+            </div>
 
-        <label for="nom">{{ _('Pseudo') }}</label>
-        <input type="text" id="nom" name="pseudo">
+            <!-- Formulaire -->
+            <form action="/" method="post" class="space-y-6">
+                <div class="form-control">
+                    <label class="label" for="nom">
+                        <span class="label-text text-gray-600 flex items-center">
+                            <i class="fas fa-user mr-2"></i> {{ _('Pseudo') }}
+                        </span>
+                    </label>
+                    <input type="text" id="nom" name="pseudo" 
+                           class="input input-bordered input-focus w-full focus:border-indigo-400" 
+                           placeholder="{{ _('Votre pseudo') }}" required>
+                </div>
 
-        <label for="mdp">{{ _('Mot de passe') }}</label>
-        <input type="password" id="mdp" name="mdp">
+                <div class="form-control">
+                    <label class="label" for="mdp">
+                        <span class="label-text text-gray-600 flex items-center">
+                            <i class="fas fa-lock mr-2"></i> {{ _('Mot de passe') }}
+                        </span>
+                    </label>
+                    <input type="password" id="mdp" name="mdp" 
+                           class="input input-bordered input-focus w-full focus:border-indigo-400" 
+                           placeholder="••••••••" required>
+                </div>
 
-        <input type="submit" value="{{ _('Se connecter') }}">
-    </form>          
+                
+
+                <div class="mt-8">
+                    <button type="submit" class="btn btn-primary w-full gap-2">
+                        {{ _('Se connecter') }}
+                        <i class="fas fa-sign-in-alt"></i>
+                    </button>
+                </div>
+            </form>
+
+            <!-- Lien inscription -->
+            
+        </div>
+    </div>
 </body>
 </html>

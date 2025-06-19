@@ -12,4 +12,4 @@ CREATE TABLE User (
 
 
 insert into User(Pseudo,Motdepasse) values('stan','stan');
-insert into User(Pseudo,Motdepasse) values('stanley','stan');
+insert into User(Pseudo,Motdepasse) values('admin','admin');

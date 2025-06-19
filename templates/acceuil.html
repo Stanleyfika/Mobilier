@@ -1,17 +1,79 @@
 <!DOCTYPE html>
-<html lang="{{ get_locale() }}">
+<html lang="{{ get_locale() }}" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ _('Accueil') }}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- DaisyUI via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Icônes Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
 </head>
-<body>
-    <h1>{{ _('MobilierBudget : choisissez ce que vous voulez chercher') }}</h1>
-    
-    <button><a href="/terrain">{{ _('Terrain à vendre') }}</a></button>
-    <button><a href="/maison">{{ _('Maison à louer') }}</a></button>
+<body class="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50">
+    <div class="container mx-auto px-4 py-12">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">
+                <i class="fas fa-couch text-purple-500 mr-3"></i>
+                {{ _('MobilierBudget') }}
+            </h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                {{ _('Choisissez ce que vous voulez chercher') }}
+            </p>
+        </div>
 
-    <div></div>
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+            <!-- Terrain Card -->
+            <a href="/terrain" class="card card-hover bg-white shadow-xl hover:shadow-2xl border border-gray-100 rounded-2xl overflow-hidden">
+                <figure class="px-10 pt-10">
+                    <div class="w-24 h-24 rounded-full bg-gradient-to-r from-emerald-100 to-teal-100 flex items-center justify-center">
+                        <i class="fas fa-tree text-4xl text-emerald-500"></i>
+                    </div>
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title text-2xl text-gray-800">{{ _('Terrain à vendre') }}</h2>
+                    <p class="text-gray-500">{{ _('Parcourez nos terrains disponibles') }}</p>
+                    <div class="card-actions mt-4">
+                        <button class="btn btn-primary gap-2">
+                            {{ _('Voir les offres') }}
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Maison Card -->
+            <a href="/maison" class="card card-hover bg-white shadow-xl hover:shadow-2xl border border-gray-100 rounded-2xl overflow-hidden">
+                <figure class="px-10 pt-10">
+                    <div class="w-24 h-24 rounded-full bg-gradient-to-r from-amber-100 to-orange-100 flex items-center justify-center">
+                        <i class="fas fa-home text-4xl text-amber-500"></i>
+                    </div>
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title text-2xl text-gray-800">{{ _('Maison à louer') }}</h2>
+                    <p class="text-gray-500">{{ _('Découvrez nos maisons disponibles') }}</p>
+                    <div class="card-actions mt-4">
+                        <button class="btn btn-primary gap-2">
+                            {{ _('Voir les offres') }}
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center mt-16 text-gray-500">
+            <p>{{ _('Trouvez la propriété de vos rêves') }} <i class="fas fa-heart text-red-400 ml-1"></i></p>
+        </div>
+    </div>
 </body>
 </html>
