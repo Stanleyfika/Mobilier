@@ -137,3 +137,21 @@ msgstr "Tsia"
 msgid "Clôturé :"
 msgstr "Voarindrina :"
 
+msgid "Titre borne"
+msgstr "Anarana amin’ny tany voafaritra"
+
+msgid "Cadastre"
+msgstr "Taratasy fananan-tany (Kadasitra)"
+
+msgid "Livre"
+msgstr "Taratasy fanomezana (boky)"
+
+msgid "Titre borne + Livre"
+msgstr "Anarana amin’ny tany sy boky"
+
+msgid "Aucun"
+msgstr "Tsy misy"
+
+msgid "'Pas de document disponible"
+msgstr "Tsy misy"
+

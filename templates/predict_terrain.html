@@ -70,14 +70,15 @@
       <option value="3">{{ _('Voiture + parking') }}</option>
     </select>
 
-    <label for="typePapier">{{ _('Type de papier :') }}</label>
-    <select id="typePapier" name="typePapier" required>
-      <option value="">{{ _('-- Sélectionner --') }}</option>
-      <option value="Titre Foncier">{{ _('Titre Foncier') }}</option>
-      <option value="Certificat Foncier">{{ _('Certificat Foncier') }}</option>
-      <option value="Lettre d’Attribution">{{ _('Lettre d’Attribution') }}</option>
-      <option value="Aucun">{{ _('Aucun') }}</option>
-    </select>
+  <label for="typePapier">{{ _('Type de document foncier :') }}</label>
+<select id="typePapier" name="typePapier" required>
+  <option value="">{{ _('-- Sélectionner un type de document --') }}</option>
+  <option value="Titre borne">{{ _('Titre Foncier (borné)') }}</option>
+  <option value="Cadastre">{{ _('Certificat Foncier (cadastré)') }}</option>
+  <option value="Livre">{{ _('Lettre d\'Attribution') }}</option>
+  <option value="Titre borne + Livre">{{ _('Titre Foncier + Lettre d\'Attribution') }}</option>
+  <option value="Aucun">{{ _('Pas de document disponible') }}</option>
+</select>
 
     <label for="pretBatir">{{ _('Prêt à bâtir :') }}</label>
     <select id="pretBatir" name="pretBatir" required>

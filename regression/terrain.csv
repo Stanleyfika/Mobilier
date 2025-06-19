@@ -1,6 +1,20 @@
-surface,acces,typePapier,pretBatir,cloture,latitude,longitude,prix
-500,2,Titre Foncier,Oui,Non,-18.8792,47.5079,150000000
-300,1,Certificat Foncier,Non,Oui,-18.9000,47.5200,80000000
-1000,3,Titre Foncier,Oui,Oui,-18.8500,47.4800,350000000
-250,0,Lettre d'Attribution,Non,Non,-19.8739,47.0319,45000000
-750,2,Titre Foncier,Oui,Non,-18.1492,49.4042,180000000
+surface;acces;typePapier;pretBatir;cloture;latitude;longitude;prix
+500;2;Titre borne;Oui;Non;-18.8792;47.5079;150000000
+300;1;Cadastre;Non;Oui;-18.9000;47.5200;80000000
+1000;3;Titre borne;Oui;Oui;-18.8500;47.4800;350000000
+250;0;Livre;Non;Non;-19.8739;47.0319;45000000
+750;2;Titre borne;Oui;Non;-18.1492;49.4042;180000000
+277;3;Livre;Oui;Non;-18.1667;49.3833;70000000
+14000;3;Aucun;Oui;Oui;-18.1667;49.3833;30000000
+50000;3;Titre borne;Oui;Non;-18.9167;47.7333;750000000
+1161;3;Titre borne + Livre;Oui;Non;-18.9000;47.5167;250000000
+312;3;Titre borne + Livre;Oui;Non;-18.9000;47.5167;75000000
+400;3;Titre borne + Livre;Oui;Non;-18.9000;47.5167;100000000
+170;3;Titre borne + Livre;Oui;Non;-18.9000;47.5167;50000000
+1700;3;Titre borne;Oui;Non;-18.9000;47.5167;450000
+8700;3;Cadastre;Oui;Non;-21.8333;46.9333;43500000
+200;3;Titre borne;Oui;Non;-18.9000;47.5167;125000000
+300;3;Titre borne;Oui;Non;-21.4500;47.0833;7500000
+300;3;Titre borne;Oui;Non;-19.8667;47.0333;10000000
+30000;3;Cadastre;Oui;Non;-18.9333;47.5333;51000000
+600;2;Aucun;Non;Non;-19.8667;47.0333;175000000
