@@ -1,0 +1,301 @@
+id,ville,type_acces,type_papier,taille_km2,prete_a_batir,prix
+1,Tulear,Acces vehicule,Borné,1.996,true,120000000
+2,Majunga,Acces vehicule,Cadastre,1.768,true,140000000
+3,Antananarivo,Acces vehicule,Borné,1.154,true,250000000
+4,Diego,Acces moto,Sans papier,2.299,false,60000000
+5,Tulear,Acces vehicule,Cadastre,1.975,true,110000000
+6,Antananarivo,Acces vehicule,Borné,0.277,true,80000000
+7,Tulear,Aucun,Borné,0.132,false,8000000
+8,Diego,Acces vehicule,Certificat foncier,0.84,true,90000000
+9,Antananarivo,Acces moto,Cadastre,0.13,true,20000000
+10,Tulear,Acces moto,Sans papier,0.964,true,18000000
+11,Majunga,Acces vehicule,Borné,0.298,true,25000000
+12,Antananarivo,Acces vehicule,Certificat foncier,1.715,true,400000000
+13,Antananarivo,Acces vehicule,Certificat foncier,2.26,true,500000000
+14,Fianarantsoa,Acces moto,Borné,0.088,true,4000000
+15,Majunga,Acces vehicule,Cadastre,2.031,true,150000000
+16,Tamatave,Acces vehicule,Cadastre,1.02,true,90000000
+17,Diego,Acces vehicule,Borné,0.663,true,35000000
+18,Majunga,Acces vehicule,Cadastre,2.041,true,155000000
+19,Tulear,Acces moto,Borné,0.253,false,10000000
+20,Majunga,Acces vehicule,Certificat foncier,2.156,false,200000000
+21,Antananarivo,Aucun,Sans papier,0.155,false,6000000
+22,Antananarivo,Aucun,Sans papier,0.12,false,5000000
+23,Fianarantsoa,Acces moto,Borné,0.081,false,3000000
+24,Tulear,Acces moto,Cadastre,0.224,false,7000000
+25,Tulear,Acces vehicule,Certificat foncier,2.443,true,180000000
+26,Tulear,Acces moto,Sans papier,2.337,true,40000000
+27,Majunga,Acces moto,Borné,0.167,false,3000000
+28,Fianarantsoa,Acces vehicule,Cadastre,0.284,true,6000000
+29,Fianarantsoa,Acces moto,Borné,0.996,false,7000000
+30,Diego,Acces vehicule,Certificat foncier,1.674,true,67000000
+31,Majunga,Acces vehicule,Borné,1.049,true,18000000
+32,Diego,Acces vehicule,Sans papier,0.521,true,2500000
+33,Tulear,Acces vehicule,Cadastre,1.43,true,9000000
+34,Diego,Acces vehicule,Cadastre,1.895,true,12000000
+35,Tulear,Aucun,Sans papier,0.19,false,800000
+36,Fianarantsoa,Acces vehicule,Cadastre,1.119,false,4000000
+37,Diego,Acces vehicule,Borné,0.921,true,9000000
+38,Diego,Acces vehicule,Borné,1.963,true,18000000
+39,Tulear,Acces moto,Sans papier,2.017,false,2000000
+40,Fianarantsoa,Acces moto,Borné,0.577,true,4000000
+41,Diego,Acces vehicule,Borné,1.06,true,10000000
+42,Diego,Acces vehicule,Borné,1.696,true,16000000
+43,Diego,Aucun,Borné,0.041,false,400000
+44,Antananarivo,Acces moto,Sans papier,1.521,true,6000000
+45,Majunga,Acces vehicule,Borné,1.294,true,12000000
+46,Diego,Acces moto,Sans papier,0.133,true,300000
+47,Tulear,Acces vehicule,Borné,0.783,true,4000000
+48,Majunga,Acces vehicule,Certificat foncier,2.383,true,40000000
+49,Majunga,Acces moto,Sans papier,0.555,false,800000
+50,Antananarivo,Acces moto,Sans papier,0.238,true,500000
+51,Fianarantsoa,Acces vehicule,Borné,1.762,true,9000000
+52,Antananarivo,Acces vehicule,Borné,1.773,true,25000000
+53,Tulear,Acces vehicule,Borné,1.687,true,8000000
+54,Fianarantsoa,Acces vehicule,Borné,0.818,true,4000000
+55,Tamatave,Acces vehicule,Borné,2.157,true,12000000
+56,Diego,Acces vehicule,Cadastre,0.627,true,3000000
+57,Antananarivo,Acces moto,Borné,0.067,true,500000
+58,Diego,Acces vehicule,Cadastre,2.019,true,90000000
+59,Antananarivo,Acces vehicule,Borné,0.721,true,12000000
+60,Diego,Acces vehicule,Borné,0.617,true,8000000
+61,Diego,Acces vehicule,Cadastre,0.255,false,3000000
+62,Tulear,Aucun,Sans papier,2.256,false,8000000
+63,Tulear,Aucun,Sans papier,2.42,false,9000000
+64,Fianarantsoa,Acces vehicule,Borné,0.567,true,7000000
+65,Tulear,Acces vehicule,Borné,1.439,true,18000000
+66,Tamatave,Acces moto,Sans papier,1.378,true,12000000
+67,Tamatave,Acces vehicule,Borné,1.701,true,25000000
+68,Tamatave,Acces vehicule,Borné,2.413,true,40000000
+69,Tulear,Acces vehicule,Borné,1.382,true,15000000
+70,Tulear,Acces vehicule,Cadastre,1.817,true,20000000
+71,Tamatave,Acces vehicule,Borné,1.301,false,10000000
+72,Majunga,Acces vehicule,Borné,0.449,true,5000000
+73,Diego,Acces vehicule,Cadastre,1.439,true,12000000
+74,Tulear,Acces vehicule,Borné,0.902,true,7000000
+75,Antananarivo,Acces moto,Sans papier,0.801,true,10000000
+76,Tulear,Acces vehicule,Cadastre,1.965,true,25000000
+77,Tulear,Acces moto,Sans papier,1.107,false,4000000
+78,Tamatave,Acces vehicule,Borné,1.137,false,6000000
+79,Majunga,Acces vehicule,Borné,0.283,true,3000000
+80,Fianarantsoa,Acces vehicule,Cadastre,1.313,true,9000000
+81,Majunga,Acces vehicule,Cadastre,0.102,true,2000000
+82,Majunga,Acces moto,Sans papier,0.428,false,2000000
+83,Fianarantsoa,Acces vehicule,Borné,1.737,true,20000000
+84,Antananarivo,Acces vehicule,Cadastre,1.908,true,40000000
+85,Tulear,Acces moto,Sans papier,1.227,true,8000000
+86,Fianarantsoa,Acces vehicule,Cadastre,2.013,true,25000000
+87,Antananarivo,Acces vehicule,Borné,1.504,true,35000000
+88,Diego,Aucun,Borné,0.015,false,1000000
+89,Majunga,Acces vehicule,Borné,1.796,true,30000000
+90,Tamatave,Acces moto,Sans papier,1.903,true,12000000
+91,Tamatave,Acces vehicule,Certificat foncier,1.013,true,40000000
+92,Tamatave,Acces moto,Sans papier,1.405,true,10000000
+93,Fianarantsoa,Acces vehicule,Cadastre,1.134,true,9000000
+94,Antananarivo,Acces vehicule,Cadastre,1.198,true,20000000
+95,Fianarantsoa,Acces vehicule,Cadastre,2.285,true,25000000
+96,Fianarantsoa,Acces vehicule,Borné,1.605,true,20000000
+97,Tamatave,Acces vehicule,Cadastre,1.587,false,10000000
+98,Majunga,Acces vehicule,Certificat foncier,1.663,false,20000000
+99,Diego,Acces vehicule,Borné,1.952,false,20000000
+100,Tamatave,Acces moto,Sans papier,2.26,true,12000000
+101,Tulear,Acces vehicule,Borné,2.205,false,10000000
+102,Tulear,Aucun,Sans papier,2.173,false,8000000
+103,Fianarantsoa,Acces vehicule,Certificat foncier,1.314,true,25000000
+104,Antananarivo,Acces vehicule,Borné,0.652,true,12000000
+105,Diego,Acces vehicule,Borné,1.26,true,15000000
+106,Diego,Acces vehicule,Certificat foncier,0.068,true,2000000
+107,Majunga,Acces vehicule,Certificat foncier,0.972,true,4000000
+108,Majunga,Acces vehicule,Cadastre,1.847,false,10000000
+109,Majunga,Acces vehicule,Borné,0.554,true,5000000
+110,Tulear,Acces moto,Sans papier,0.444,true,2000000
+111,Antananarivo,Acces vehicule,Borné,0.801,true,10000000
+112,Majunga,Acces vehicule,Cadastre,2.394,true,25000000
+113,Diego,Acces vehicule,Cadastre,2.11,false,10000000
+114,Tamatave,Acces moto,Sans papier,0.755,false,4000000
+115,Tulear,Acces vehicule,Cadastre,2.226,false,10000000
+116,Fianarantsoa,Acces vehicule,Cadastre,0.125,true,2000000
+117,Fianarantsoa,Acces vehicule,Certificat foncier,0.291,true,4000000
+118,Fianarantsoa,Acces vehicule,Cadastre,0.819,true,7000000
+119,Majunga,Acces vehicule,Cadastre,1.813,true,20000000
+120,Fianarantsoa,Acces vehicule,Cadastre,0.917,true,8000000
+121,Majunga,Acces vehicule,Cadastre,1.704,false,10000000
+122,Tulear,Acces moto,Sans papier,2.042,true,9000000
+123,Fianarantsoa,Acces vehicule,Borné,0.287,true,2000000
+124,Diego,Acces vehicule,Borné,2.369,true,40000000
+125,Fianarantsoa,Acces vehicule,Borné,2.195,false,10000000
+126,Diego,Acces moto,Sans papier,1.066,true,8000000
+127,Antananarivo,Acces moto,Sans papier,2.414,true,20000000
+128,Tulear,Acces vehicule,Borné,1.991,true,20000000
+129,Diego,Acces vehicule,Cadastre,1.134,true,9000000
+130,Antananarivo,Acces vehicule,Cadastre,0.933,true,10000000
+131,Diego,Acces vehicule,Cadastre,1.726,true,20000000
+132,Fianarantsoa,Acces vehicule,Cadastre,1.01,true,9000000
+133,Majunga,Acces vehicule,Cadastre,1.635,false,10000000
+134,Antananarivo,Acces vehicule,Certificat foncier,0.562,true,4000000
+135,Fianarantsoa,Acces vehicule,Cadastre,0.249,false,2000000
+136,Antananarivo,Acces vehicule,Borné,1.071,true,12000000
+137,Antananarivo,Acces vehicule,Borné,0.953,false,8000000
+138,Antananarivo,Acces vehicule,Borné,0.705,true,7000000
+139,Tamatave,Acces moto,Sans papier,0.033,true,1000000
+140,Antananarivo,Acces vehicule,Borné,1.343,true,20000000
+141,Fianarantsoa,Acces vehicule,Cadastre,0.644,false,2000000
+142,Majunga,Acces vehicule,Borné,1.205,false,8000000
+143,Tamatave,Acces vehicule,Borné,0.132,false,2000000
+144,Diego,Acces vehicule,Cadastre,0.414,false,2000000
+145,Majunga,Acces vehicule,Certificat foncier,2.464,false,20000000
+146,Diego,Acces moto,Sans papier,2.06,true,9000000
+147,Tamatave,Acces vehicule,Cadastre,0.514,true,4000000
+148,Fianarantsoa,Acces vehicule,Borné,0.393,false,2000000
+149,Antananarivo,Acces vehicule,Borné,1.601,false,10000000
+150,Tulear,Acces vehicule,Borné,1.994,true,20000000
+151,Tulear,Acces vehicule,Borné,0.61,true,4000000
+152,Majunga,Acces vehicule,Cadastre,1.031,true,7000000
+153,Diego,Acces vehicule,Certificat foncier,0.059,false,1000000
+154,Antananarivo,Acces vehicule,Borné,1.112,true,10000000
+155,Diego,Acces vehicule,Borné,2.2,true,40000000
+156,Diego,Acces vehicule,Cadastre,0.247,false,2000000
+157,Diego,Acces moto,Sans papier,1.544,true,7000000
+158,Tamatave,Acces vehicule,Borné,1.362,true,10000000
+159,Diego,Acces vehicule,Certificat foncier,1.03,true,9000000
+160,Diego,Acces vehicule,Cadastre,1.586,true,20000000
+161,Majunga,Acces vehicule,Borné,1.118,true,10000000
+162,Fianarantsoa,Acces vehicule,Certificat foncier,0.064,true,1000000
+163,Majunga,Acces vehicule,Borné,2.175,true,40000000
+164,Tulear,Acces vehicule,Cadastre,2.441,true,20000000
+165,Tulear,Acces vehicule,Cadastre,0.028,true,1000000
+166,Majunga,Acces vehicule,Cadastre,1.992,true,20000000
+167,Majunga,Acces moto,Sans papier,1.716,true,9000000
+168,Diego,Acces moto,Sans papier,1.09,false,4000000
+169,Majunga,Acces vehicule,Borné,1.27,true,10000000
+170,Majunga,Acces moto,Sans papier,1.968,false,8000000
+171,Diego,Acces moto,Sans papier,2.147,true,10000000
+172,Diego,Acces vehicule,Cadastre,1.345,true,9000000
+173,Tulear,Acces vehicule,Borné,1.436,false,7000000
+174,Tamatave,Acces moto,Sans papier,0.548,true,2000000
+175,Diego,Acces vehicule,Cadastre,1.453,false,8000000
+176,Antananarivo,Acces vehicule,Cadastre,0.331,true,2000000
+177,Tulear,Acces vehicule,Borné,2.227,false,10000000
+178,Fianarantsoa,Acces vehicule,Cadastre,2.343,false,10000000
+179,Antananarivo,Acces vehicule,Cadastre,0.852,true,7000000
+180,Majunga,Acces vehicule,Cadastre,2.419,true,20000000
+181,Majunga,Acces vehicule,Certificat foncier,2.442,true,40000000
+182,Tulear,Acces vehicule,Certificat foncier,1.746,true,20000000
+183,Tulear,Acces vehicule,Cadastre,2.311,false,10000000
+184,Tulear,Acces vehicule,Certificat foncier,0.401,true,4000000
+185,Tamatave,Acces vehicule,Borné,1.728,true,20000000
+186,Tulear,Acces vehicule,Borné,1.867,true,10000000
+187,Diego,Acces vehicule,Certificat foncier,2.383,true,40000000
+188,Antananarivo,Acces vehicule,Certificat foncier,1.78,true,40000000
+189,Majunga,Acces vehicule,Certificat foncier,2.25,true,40000000
+190,Tamatave,Acces vehicule,Certificat foncier,1.323,true,20000000
+191,Tulear,Acces vehicule,Borné,1.696,true,10000000
+192,Majunga,Acces vehicule,Cadastre,2.377,false,10000000
+193,Tamatave,Acces vehicule,Borné,2.104,true,20000000
+194,Diego,Acces vehicule,Certificat foncier,1.51,false,10000000
+195,Diego,Acces vehicule,Borné,2.155,false,10000000
+196,Antananarivo,Acces vehicule,Borné,2.162,false,10000000
+197,Antananarivo,Acces vehicule,Borné,1.637,true,20000000
+198,Majunga,Acces vehicule,Cadastre,1.207,false,10000000
+199,Antananarivo,Acces moto,Sans papier,0.149,true,2000000
+200,Antananarivo,Acces moto,Sans papier,0.057,true,1000000
+201,Majunga,Acces vehicule,Borné,2.17,true,20000000
+202,Tamatave,Acces vehicule,Cadastre,0.289,true,2000000
+203,Fianarantsoa,Aucun,Sans papier,0.819,true,1000000
+204,Tamatave,Acces vehicule,Borné,1.209,false,10000000
+205,Diego,Acces vehicule,Borné,1.578,true,10000000
+206,Tamatave,Acces vehicule,Certificat foncier,1.378,true,20000000
+207,Fianarantsoa,Acces vehicule,Borné,1.654,true,10000000
+208,Fianarantsoa,Acces vehicule,Borné,1.802,true,10000000
+209,Tulear,Acces vehicule,Cadastre,1.861,false,10000000
+210,Diego,Acces moto,Sans papier,0.867,true,1000000
+211,Antananarivo,Acces vehicule,Cadastre,1.343,false,10000000
+212,Tamatave,Acces moto,Sans papier,0.173,true,1000000
+213,Diego,Acces vehicule,Borné,0.506,false,1000000
+214,Fianarantsoa,Acces vehicule,Borné,1.985,false,10000000
+215,Tamatave,Acces vehicule,Borné,0.528,true,1000000
+216,Majunga,Acces moto,Sans papier,1.415,true,1000000
+217,Majunga,Acces vehicule,Borné,0.217,false,1000000
+218,Majunga,Acces vehicule,Cadastre,1.179,true,1000000
+219,Tamatave,Acces vehicule,Cadastre,1.329,true,1000000
+220,Antananarivo,Acces vehicule,Cadastre,0.87,false,1000000
+221,Diego,Acces vehicule,Borné,1.748,true,1000000
+222,Antananarivo,Acces moto,Sans papier,2.29,true,1000000
+223,Fianarantsoa,Acces vehicule,Borné,0.337,true,1000000
+224,Tulear,Acces vehicule,Cadastre,2.079,true,1000000
+225,Antananarivo,Acces vehicule,Borné,1.804,true,1000000
+226,Tulear,Acces vehicule,Cadastre,1.07,true,1000000
+227,Fianarantsoa,Acces vehicule,Borné,0.18,true,1000000
+228,Diego,Acces vehicule,Borné,0.802,true,1000000
+229,Fianarantsoa,Acces moto,Sans papier,1.468,false,1000000
+230,Fianarantsoa,Acces vehicule,Cadastre,1.671,true,1000000
+231,Fianarantsoa,Acces vehicule,Borné,1.787,true,1000000
+232,Diego,Acces vehicule,Certificat foncier,0.638,true,1000000
+233,Tamatave,Acces vehicule,Borné,1.657,true,1000000
+234,Tulear,Acces vehicule,Borné,1.876,true,1000000
+235,Antananarivo,Acces vehicule,Borné,1.456,false,1000000
+236,Antananarivo,Acces moto,Sans papier,1.429,false,1000000
+237,Antananarivo,Acces vehicule,Borné,1.467,false,1000000
+238,Diego,Acces vehicule,Cadastre,0.12,false,1000000
+239,Majunga,Acces vehicule,Certificat foncier,2.21,true,1000000
+240,Fianarantsoa,Acces vehicule,Cadastre,2.401,false,1000000
+241,Tamatave,Aucun,Sans papier,0.61,false,1000000
+242,Tamatave,Acces vehicule,Cadastre,2.374,true,1000000
+243,Diego,Acces vehicule,Cadastre,1.376,true,1000000
+244,Antananarivo,Acces moto,Sans papier,0.437,true,1000000
+245,Majunga,Acces vehicule,Cadastre,0.797,true,1000000
+246,Tulear,Acces moto,Sans papier,1.815,true,1000000
+247,Tamatave,Acces vehicule,Cadastre,1.498,true,1000000
+248,Tamatave,Acces vehicule,Borné,1.473,true,1000000
+249,Tulear,Acces moto,Sans papier,1.262,true,1000000
+250,Majunga,Acces vehicule,Cadastre,2.379,true,1000000
+251,Majunga,Acces vehicule,Borné,2.196,true,1000000
+252,Majunga,Acces moto,Sans papier,2.257,false,1000000
+253,Diego,Acces moto,Sans papier,0.134,true,1000000
+254,Majunga,Acces vehicule,Cadastre,2.331,true,1000000
+255,Majunga,Acces vehicule,Cadastre,1.85,true,1000000
+256,Tamatave,Acces vehicule,Borné,1.316,false,1000000
+257,Tulear,Acces moto,Sans papier,1.624,true,1000000
+258,Antananarivo,Acces vehicule,Cadastre,2.46,false,1000000
+259,Antananarivo,Acces vehicule,Borné,0.703,true,1000000
+260,Majunga,Acces vehicule,Cadastre,2.151,true,1000000
+261,Tamatave,Acces vehicule,Cadastre,1.086,true,1000000
+262,Tulear,Acces vehicule,Borné,1.891,true,1000000
+263,Tamatave,Acces vehicule,Cadastre,1.002,true,1000000
+264,Tulear,Acces vehicule,Borné,1.444,true,1000000
+265,Tamatave,Acces vehicule,Borné,0.46,false,1000000
+266,Diego,Acces moto,Sans papier,1.626,true,1000000
+267,Tulear,Acces vehicule,Certificat foncier,2.299,true,1000000
+268,Tamatave,Acces vehicule,Borné,1.188,true,1000000
+269,Majunga,Acces vehicule,Borné,0.473,true,1000000
+270,Antananarivo,Acces vehicule,Borné,0.766,true,1000000
+271,Tulear,Acces vehicule,Borné,0.048,true,1000000
+272,Majunga,Acces vehicule,Cadastre,0.427,true,1000000
+273,Fianarantsoa,Acces vehicule,Borné,2.043,false,1000000
+274,Fianarantsoa,Acces vehicule,Borné,0.457,true,1000000
+275,Antananarivo,Acces vehicule,Cadastre,0.012,true,1000000
+276,Diego,Acces vehicule,Borné,1.872,true,1000000
+277,Tamatave,Acces vehicule,Cadastre,1.81,true,1000000
+278,Diego,Acces vehicule,Certificat foncier,1.518,true,1000000
+279,Diego,Acces moto,Sans papier,1.238,false,1000000
+280,Fianarantsoa,Acces vehicule,Certificat foncier,0.619,true,1000000
+281,Majunga,Acces vehicule,Borné,2.133,true,1000000
+282,Majunga,Acces moto,Sans papier,1.309,true,1000000
+283,Fianarantsoa,Acces vehicule,Borné,0.635,true,1000000
+284,Fianarantsoa,Acces vehicule,Borné,0.45,true,1000000
+285,Majunga,Acces vehicule,Borné,1.091,true,1000000
+286,Diego,Acces vehicule,Certificat foncier,0.6,true,1000000
+287,Diego,Acces vehicule,Cadastre,0.662,true,1000000
+288,Tulear,Acces vehicule,Borné,1.563,true,1000000
+289,Fianarantsoa,Acces vehicule,Borné,2.324,true,1000000
+290,Antananarivo,Acces vehicule,Cadastre,0.771,true,1000000
+291,Majunga,Acces vehicule,Cadastre,0.858,true,1000000
+292,Tamatave,Acces vehicule,Borné,1.528,false,1000000
+293,Tulear,Acces vehicule,Cadastre,1.875,true,1000000
+294,Fianarantsoa,Acces vehicule,Cadastre,1.064,true,1000000
+295,Majunga,Acces moto,Sans papier,1.795,true,1000000
+296,Fianarantsoa,Acces vehicule,Cadastre,1.212,true,1000000
+297,Tamatave,Acces vehicule,Borné,2.319,false,1000000
+298,Antananarivo,Acces vehicule,Borné,1.432,true,1000000
+299,Majunga,Acces vehicule,Certificat foncier,1.628,false,1000000
+300,Majunga,Acces vehicule,Borné,0.123,false,1000000

@@ -1,0 +1,301 @@
+id,ville,nb_chambres,type,douche_toilettes,type_acces,categorie,prix
+1,Tulear,4,F4,intérieur,Acces vehicule,Maison,1039000
+2,Tamatave,4,F4,intérieur,Acces vehicule,Maison,1533000
+3,Majunga,4,F4,intérieur,Acces vehicule,Maison,2186000
+4,Antananarivo,5,F5,intérieur,Acces moto,Appartement,979000
+5,Majunga,5,F5,intérieur,Acces vehicule,Appartement,926000
+6,Antananarivo,4,F4,intérieur,Acces moto,Appartement,885000
+7,Diego,5,F5,intérieur,Aucun,Appartement,551000
+8,Antananarivo,5,F5,intérieur,Acces vehicule,Maison,3907000
+9,Antananarivo,3,T3,intérieur,Acces vehicule,Maison,1384000
+10,Fianarantsoa,3,T3,extérieur,Acces vehicule,Appartement,378000
+11,Tamatave,5,F5,intérieur,Acces vehicule,Appartement,547000
+12,Diego,4,F4,intérieur,Acces moto,Maison,1148000
+13,Tulear,2,T2,intérieur,Aucun,Appartement,191000
+14,Tulear,3,T3,extérieur,Acces vehicule,Appartement,330000
+15,Tulear,5,F5,intérieur,Acces vehicule,Appartement,461000
+16,Fianarantsoa,4,F4,intérieur,Acces moto,Maison,1198000
+17,Antananarivo,5,F5,intérieur,Aucun,Appartement,946000
+18,Diego,2,T2,intérieur,Acces vehicule,Maison,699000
+19,Tamatave,5,F5,extérieur,Acces vehicule,Maison,2345000
+20,Antananarivo,3,T3,intérieur,Acces moto,Appartement,416000
+21,Majunga,3,T3,intérieur,Acces moto,Maison,858000
+22,Tamatave,3,T3,extérieur,Aucun,Maison,1552000
+23,Tamatave,5,F5,intérieur,Acces moto,Appartement,653000
+24,Tulear,5,F5,intérieur,Acces vehicule,Maison,1303000
+25,Fianarantsoa,3,T3,intérieur,Acces moto,Appartement,498000
+26,Diego,2,T2,extérieur,Acces vehicule,Appartement,378000
+27,Majunga,4,F4,intérieur,Acces moto,Appartement,554000
+28,Antananarivo,2,T2,intérieur,Acces vehicule,Maison,2173000
+29,Tulear,2,T2,intérieur,Acces vehicule,Maison,614000
+30,Tulear,2,T2,intérieur,Acces moto,Appartement,256000
+31,Tamatave,3,T3,intérieur,Acces vehicule,Appartement,337000
+32,Majunga,5,F5,intérieur,Acces vehicule,Appartement,951000
+33,Fianarantsoa,3,T3,intérieur,Acces moto,Appartement,451000
+34,Diego,3,T3,extérieur,Acces vehicule,Appartement,577000
+35,Tulear,2,T2,intérieur,Acces vehicule,Appartement,398000
+36,Tulear,3,T3,extérieur,Aucun,Appartement,289000
+37,Tulear,4,F4,intérieur,Aucun,Appartement,390000
+38,Majunga,5,F5,intérieur,Acces vehicule,Maison,1021000
+39,Tamatave,3,T3,intérieur,Acces moto,Appartement,802000
+40,Diego,2,T2,intérieur,Acces vehicule,Appartement,355000
+41,Majunga,4,F4,intérieur,Acces moto,Maison,1264000
+42,Majunga,5,F5,intérieur,Acces vehicule,Appartement,903000
+43,Tamatave,3,T3,extérieur,Acces vehicule,Appartement,472000
+44,Diego,2,T2,extérieur,Acces vehicule,Maison,1000000
+45,Tulear,4,F4,intérieur,Acces vehicule,Maison,802000
+46,Tulear,5,F5,intérieur,Acces vehicule,Maison,880000
+47,Antananarivo,5,F5,intérieur,Acces moto,Maison,2755000
+48,Tamatave,2,T2,intérieur,Acces vehicule,Appartement,774000
+49,Majunga,3,T3,intérieur,Acces vehicule,Appartement,287000
+50,Fianarantsoa,5,F5,intérieur,Acces moto,Appartement,417000
+51,Antananarivo,4,F4,intérieur,Acces vehicule,Appartement,800000
+52,Fianarantsoa,3,T3,extérieur,Acces vehicule,Appartement,423000
+53,Diego,3,T3,extérieur,Acces moto,Maison,1284000
+54,Tamatave,2,T2,intérieur,Acces moto,Appartement,776000
+55,Antananarivo,2,T2,extérieur,Acces moto,Maison,2732000
+56,Diego,2,T2,intérieur,Acces vehicule,Maison,1480000
+57,Tamatave,3,T3,intérieur,Aucun,Appartement,505000
+58,Antananarivo,4,F4,intérieur,Acces vehicule,Maison,3795000
+59,Tulear,5,F5,intérieur,Acces moto,Maison,646000
+60,Majunga,4,F4,intérieur,Acces moto,Appartement,556000
+61,Tulear,5,F5,intérieur,Acces vehicule,Appartement,254000
+62,Fianarantsoa,5,F5,intérieur,Aucun,Appartement,498000
+63,Tulear,4,F4,intérieur,Acces vehicule,Maison,1091000
+64,Tulear,3,T3,intérieur,Acces vehicule,Appartement,347000
+65,Tamatave,5,F5,intérieur,Acces vehicule,Maison,1666000
+66,Antananarivo,4,F4,intérieur,Acces vehicule,Maison,2943000
+67,Tulear,3,T3,intérieur,Acces vehicule,Maison,612000
+68,Antananarivo,4,F4,extérieur,Acces vehicule,Appartement,1297000
+69,Tamatave,3,T3,intérieur,Acces moto,Appartement,262000
+70,Diego,5,F5,intérieur,Acces moto,Appartement,332000
+71,Tulear,5,F5,intérieur,Acces vehicule,Appartement,507000
+72,Majunga,2,T2,intérieur,Acces vehicule,Appartement,783000
+73,Fianarantsoa,2,T2,extérieur,Acces vehicule,Maison,861000
+74,Majunga,3,T3,extérieur,Acces vehicule,Appartement,403000
+75,Fianarantsoa,5,F5,intérieur,Acces moto,Maison,747000
+76,Majunga,3,T3,intérieur,Acces moto,Appartement,696000
+77,Antananarivo,4,F4,intérieur,Acces moto,Maison,1511000
+78,Fianarantsoa,3,T3,intérieur,Acces vehicule,Appartement,233000
+79,Tulear,4,F4,intérieur,Acces vehicule,Maison,791000
+80,Tulear,2,T2,extérieur,Aucun,Maison,816000
+81,Tulear,2,T2,extérieur,Acces moto,Appartement,400000
+82,Antananarivo,5,F5,intérieur,Acces moto,Appartement,1032000
+83,Tamatave,4,F4,intérieur,Acces moto,Appartement,943000
+84,Fianarantsoa,5,F5,intérieur,Acces vehicule,Maison,1323000
+85,Diego,3,T3,intérieur,Acces vehicule,Appartement,509000
+86,Tamatave,2,T2,intérieur,Acces vehicule,Appartement,963000
+87,Diego,5,F5,intérieur,Acces moto,Maison,842000
+88,Majunga,4,F4,intérieur,Acces vehicule,Appartement,579000
+89,Majunga,4,F4,intérieur,Acces moto,Maison,1624000
+90,Tulear,4,F4,intérieur,Acces vehicule,Appartement,545000
+91,Majunga,4,F4,intérieur,Acces moto,Appartement,287000
+92,Tamatave,4,F4,intérieur,Acces vehicule,Maison,1844000
+93,Tamatave,5,F5,extérieur,Acces vehicule,Appartement,482000
+94,Fianarantsoa,3,T3,intérieur,Acces vehicule,Appartement,425000
+95,Diego,4,F4,intérieur,Acces moto,Appartement,236000
+96,Tamatave,3,T3,intérieur,Acces vehicule,Appartement,788000
+97,Tulear,5,F5,extérieur,Acces moto,Appartement,424000
+98,Fianarantsoa,2,T2,extérieur,Acces vehicule,Appartement,336000
+99,Majunga,5,F5,intérieur,Acces moto,Maison,969000
+100,Tamatave,2,T2,intérieur,Acces vehicule,Appartement,348000
+101,Diego,3,T3,intérieur,Acces vehicule,Maison,865000
+102,Tamatave,3,T3,intérieur,Acces moto,Appartement,270000
+103,Fianarantsoa,5,F5,intérieur,Acces vehicule,Maison,1572000
+104,Tulear,2,T2,intérieur,Acces vehicule,Maison,1032000
+105,Diego,4,F4,intérieur,Aucun,Appartement,245000
+106,Diego,3,T3,intérieur,Acces moto,Appartement,357000
+107,Tulear,3,T3,intérieur,Acces vehicule,Maison,500000
+108,Antananarivo,4,F4,intérieur,Aucun,Maison,2488000
+109,Fianarantsoa,2,T2,intérieur,Acces vehicule,Appartement,408000
+110,Diego,4,F4,intérieur,Acces moto,Appartement,291000
+111,Fianarantsoa,5,F5,intérieur,Acces vehicule,Appartement,368000
+112,Majunga,4,F4,extérieur,Acces vehicule,Appartement,824000
+113,Fianarantsoa,4,F4,extérieur,Aucun,Appartement,454000
+114,Majunga,4,F4,intérieur,Acces moto,Appartement,620000
+115,Majunga,2,T2,extérieur,Acces moto,Maison,1085000
+116,Tulear,4,F4,intérieur,Acces vehicule,Appartement,295000
+117,Tamatave,5,F5,intérieur,Acces vehicule,Maison,1495000
+118,Tulear,5,F5,intérieur,Acces moto,Maison,986000
+119,Majunga,3,T3,intérieur,Acces vehicule,Maison,1746000
+120,Diego,2,T2,intérieur,Acces vehicule,Appartement,235000
+121,Antananarivo,3,T3,intérieur,Aucun,Appartement,563000
+122,Antananarivo,4,F4,intérieur,Acces vehicule,Maison,2389000
+123,Tamatave,5,F5,extérieur,Acces vehicule,Maison,1993000
+124,Tulear,3,T3,intérieur,Acces vehicule,Maison,791000
+125,Tulear,5,F5,extérieur,Acces moto,Maison,963000
+126,Diego,4,F4,intérieur,Acces vehicule,Maison,978000
+127,Fianarantsoa,4,F4,intérieur,Acces vehicule,Appartement,391000
+128,Antananarivo,3,T3,intérieur,Acces moto,Maison,1232000
+129,Majunga,4,F4,intérieur,Acces vehicule,Appartement,418000
+130,Antananarivo,3,T3,intérieur,Acces vehicule,Appartement,1021000
+131,Fianarantsoa,5,F5,intérieur,Acces moto,Appartement,403000
+132,Majunga,4,F4,extérieur,Acces moto,Appartement,627000
+133,Fianarantsoa,5,F5,extérieur,Acces moto,Appartement,548000
+134,Fianarantsoa,2,T2,intérieur,Acces moto,Appartement,520000
+135,Tulear,2,T2,extérieur,Acces vehicule,Maison,827000
+136,Antananarivo,3,T3,intérieur,Acces vehicule,Appartement,599000
+137,Tamatave,5,F5,intérieur,Acces vehicule,Appartement,459000
+138,Antananarivo,5,F5,intérieur,Acces moto,Maison,1444000
+139,Tamatave,3,T3,intérieur,Aucun,Appartement,249000
+140,Fianarantsoa,2,T2,extérieur,Acces vehicule,Maison,1036000
+141,Tamatave,3,T3,extérieur,Acces moto,Appartement,438000
+142,Diego,5,F5,intérieur,Acces vehicule,Appartement,382000
+143,Tamatave,2,T2,extérieur,Acces moto,Appartement,299000
+144,Tulear,2,T2,intérieur,Acces vehicule,Appartement,439000
+145,Tamatave,5,F5,intérieur,Acces vehicule,Maison,880000
+146,Tamatave,3,T3,intérieur,Acces vehicule,Appartement,547000
+147,Diego,5,F5,intérieur,Acces vehicule,Appartement,612000
+148,Tulear,5,F5,intérieur,Acces vehicule,Appartement,541000
+149,Antananarivo,5,F5,intérieur,Acces vehicule,Maison,1337000
+150,Tamatave,5,F5,intérieur,Acces moto,Appartement,959000
+151,Fianarantsoa,4,F4,intérieur,Acces vehicule,Appartement,627000
+152,Tamatave,3,T3,intérieur,Acces vehicule,Maison,2060000
+153,Diego,3,T3,intérieur,Acces vehicule,Maison,1193000
+154,Tamatave,5,F5,extérieur,Acces vehicule,Appartement,482000
+155,Diego,5,F5,intérieur,Acces vehicule,Maison,1009000
+156,Antananarivo,4,F4,intérieur,Acces vehicule,Appartement,611000
+157,Tamatave,4,F4,intérieur,Acces vehicule,Appartement,803000
+158,Fianarantsoa,3,T3,intérieur,Acces moto,Maison,722000
+159,Tulear,4,F4,intérieur,Acces vehicule,Appartement,424000
+160,Antananarivo,3,T3,extérieur,Aucun,Appartement,925000
+161,Antananarivo,2,T2,intérieur,Acces moto,Appartement,870000
+162,Fianarantsoa,3,T3,intérieur,Acces vehicule,Appartement,347000
+163,Fianarantsoa,3,T3,intérieur,Acces moto,Maison,921000
+164,Tulear,3,T3,intérieur,Acces vehicule,Appartement,367000
+165,Tamatave,4,F4,extérieur,Acces vehicule,Maison,903000
+166,Majunga,5,F5,intérieur,Acces moto,Appartement,531000
+167,Tulear,2,T2,intérieur,Acces vehicule,Maison,822000
+168,Majunga,4,F4,intérieur,Acces vehicule,Appartement,544000
+169,Tamatave,2,T2,extérieur,Acces vehicule,Appartement,893000
+170,Antananarivo,2,T2,intérieur,Acces moto,Appartement,512000
+171,Diego,2,T2,intérieur,Acces vehicule,Appartement,613000
+172,Majunga,4,F4,intérieur,Acces vehicule,Appartement,452000
+173,Diego,3,T3,intérieur,Acces moto,Appartement,237000
+174,Diego,4,F4,extérieur,Acces moto,Appartement,205000
+175,Tamatave,2,T2,intérieur,Acces vehicule,Appartement,964000
+176,Diego,4,F4,intérieur,Acces moto,Maison,817000
+177,Tamatave,5,F5,extérieur,Acces vehicule,Appartement,791000
+178,Diego,2,T2,intérieur,Acces moto,Appartement,589000
+179,Majunga,5,F5,intérieur,Acces vehicule,Appartement,344000
+180,Fianarantsoa,2,T2,intérieur,Acces vehicule,Appartement,634000
+181,Diego,4,F4,intérieur,Acces vehicule,Appartement,541000
+182,Fianarantsoa,2,T2,intérieur,Acces vehicule,Maison,724000
+183,Fianarantsoa,4,F4,extérieur,Acces vehicule,Maison,1110000
+184,Antananarivo,4,F4,intérieur,Acces moto,Appartement,559000
+185,Fianarantsoa,4,F4,intérieur,Acces moto,Appartement,628000
+186,Antananarivo,3,T3,extérieur,Acces moto,Appartement,1061000
+187,Tamatave,2,T2,intérieur,Acces moto,Maison,1247000
+188,Tulear,5,F5,intérieur,Aucun,Appartement,447000
+189,Diego,2,T2,intérieur,Acces vehicule,Maison,1077000
+190,Fianarantsoa,5,F5,intérieur,Acces vehicule,Appartement,492000
+191,Tulear,3,T3,intérieur,Acces moto,Appartement,461000
+192,Majunga,4,F4,extérieur,Acces vehicule,Appartement,604000
+193,Diego,2,T2,extérieur,Acces vehicule,Appartement,634000
+194,Majunga,4,F4,intérieur,Acces vehicule,Appartement,956000
+195,Majunga,5,F5,intérieur,Acces vehicule,Appartement,786000
+196,Majunga,5,F5,intérieur,Aucun,Appartement,445000
+197,Majunga,2,T2,extérieur,Aucun,Maison,1443000
+198,Tulear,3,T3,intérieur,Acces moto,Appartement,469000
+199,Fianarantsoa,5,F5,intérieur,Acces moto,Appartement,482000
+200,Tulear,4,F4,intérieur,Acces vehicule,Appartement,494000
+201,Tulear,3,T3,intérieur,Acces moto,Appartement,467000
+202,Diego,4,F4,extérieur,Acces vehicule,Maison,813000
+203,Majunga,5,F5,extérieur,Acces vehicule,Maison,1058000
+204,Tamatave,4,F4,extérieur,Acces vehicule,Maison,1399000
+205,Tamatave,3,T3,intérieur,Acces vehicule,Appartement,478000
+206,Tulear,5,F5,intérieur,Acces vehicule,Appartement,308000
+207,Antananarivo,4,F4,intérieur,Acces vehicule,Appartement,1257000
+208,Tamatave,5,F5,intérieur,Acces vehicule,Appartement,391000
+209,Tamatave,5,F5,intérieur,Acces vehicule,Maison,1481000
+210,Antananarivo,3,T3,intérieur,Acces moto,Appartement,518000
+211,Fianarantsoa,5,F5,intérieur,Acces vehicule,Appartement,699000
+212,Tamatave,2,T2,intérieur,Acces moto,Maison,1471000
+213,Majunga,3,T3,intérieur,Acces vehicule,Maison,1101000
+214,Majunga,5,F5,intérieur,Acces moto,Appartement,612000
+215,Tamatave,2,T2,intérieur,Acces vehicule,Appartement,838000
+216,Tulear,2,T2,intérieur,Acces moto,Appartement,345000
+217,Tamatave,2,T2,intérieur,Acces vehicule,Appartement,810000
+218,Diego,2,T2,extérieur,Acces vehicule,Maison,979000
+219,Diego,2,T2,intérieur,Aucun,Appartement,449000
+220,Majunga,4,F4,intérieur,Acces vehicule,Appartement,835000
+221,Tamatave,4,F4,intérieur,Acces moto,Appartement,479000
+222,Tulear,2,T2,intérieur,Acces vehicule,Appartement,516000
+223,Tamatave,5,F5,extérieur,Acces vehicule,Appartement,779000
+224,Fianarantsoa,4,F4,extérieur,Acces moto,Maison,708000
+225,Tulear,4,F4,intérieur,Acces vehicule,Appartement,369000
+226,Diego,5,F5,intérieur,Acces vehicule,Appartement,447000
+227,Fianarantsoa,3,T3,intérieur,Acces vehicule,Appartement,650000
+228,Fianarantsoa,5,F5,intérieur,Acces moto,Appartement,655000
+229,Antananarivo,5,F5,intérieur,Acces vehicule,Maison,2756000
+230,Tamatave,4,F4,intérieur,Acces moto,Appartement,852000
+231,Majunga,4,F4,intérieur,Aucun,Appartement,464000
+232,Antananarivo,2,T2,extérieur,Acces vehicule,Maison,1515000
+233,Majunga,3,T3,extérieur,Acces vehicule,Appartement,319000
+234,Tamatave,2,T2,intérieur,Acces moto,Appartement,427000
+235,Tulear,4,F4,intérieur,Acces vehicule,Appartement,475000
+236,Majunga,5,F5,intérieur,Acces moto,Maison,992000
+237,Majunga,4,F4,intérieur,Acces vehicule,Appartement,583000
+238,Fianarantsoa,5,F5,intérieur,Acces vehicule,Maison,718000
+239,Diego,4,F4,intérieur,Acces vehicule,Appartement,242000
+240,Fianarantsoa,3,T3,intérieur,Acces vehicule,Appartement,637000
+241,Diego,4,F4,intérieur,Acces vehicule,Appartement,456000
+242,Majunga,4,F4,intérieur,Acces moto,Appartement,810000
+243,Fianarantsoa,2,T2,extérieur,Acces moto,Appartement,544000
+244,Tamatave,5,F5,intérieur,Acces vehicule,Appartement,844000
+245,Antananarivo,2,T2,intérieur,Aucun,Appartement,588000
+246,Tamatave,3,T3,intérieur,Acces vehicule,Maison,1915000
+247,Antananarivo,2,T2,intérieur,Acces moto,Maison,1123000
+248,Fianarantsoa,5,F5,intérieur,Acces vehicule,Appartement,282000
+249,Majunga,2,T2,extérieur,Acces moto,Maison,1042000
+250,Antananarivo,3,T3,intérieur,Acces moto,Appartement,987000
+251,Majunga,5,F5,intérieur,Acces moto,Appartement,399000
+252,Antananarivo,4,F4,extérieur,Acces vehicule,Appartement,766000
+253,Tamatave,2,T2,intérieur,Acces vehicule,Appartement,745000
+254,Tulear,4,F4,intérieur,Acces vehicule,Maison,692000
+255,Antananarivo,3,T3,intérieur,Acces vehicule,Maison,1996000
+256,Tulear,4,F4,intérieur,Acces moto,Appartement,275000
+257,Tulear,5,F5,intérieur,Acces vehicule,Appartement,531000
+258,Diego,2,T2,extérieur,Acces vehicule,Appartement,574000
+259,Antananarivo,5,F5,intérieur,Acces vehicule,Appartement,974000
+260,Diego,3,T3,intérieur,Aucun,Maison,634000
+261,Antananarivo,2,T2,extérieur,Acces vehicule,Maison,3142000
+262,Antananarivo,3,T3,extérieur,Acces vehicule,Appartement,1188000
+263,Diego,4,F4,extérieur,Acces vehicule,Maison,810000
+264,Diego,3,T3,intérieur,Acces vehicule,Appartement,694000
+265,Tulear,5,F5,intérieur,Acces vehicule,Maison,1070000
+266,Tamatave,2,T2,extérieur,Acces moto,Appartement,712000
+267,Antananarivo,4,F4,intérieur,Acces vehicule,Appartement,897000
+268,Tulear,3,T3,intérieur,Aucun,Maison,387000
+269,Majunga,5,F5,intérieur,Acces vehicule,Appartement,663000
+270,Tulear,2,T2,extérieur,Acces vehicule,Maison,583000
+271,Diego,3,T3,intérieur,Acces vehicule,Maison,756000
+272,Antananarivo,3,T3,intérieur,Acces vehicule,Appartement,572000
+273,Tulear,2,T2,intérieur,Acces moto,Maison,841000
+274,Fianarantsoa,5,F5,intérieur,Acces vehicule,Appartement,702000
+275,Antananarivo,5,F5,intérieur,Acces moto,Maison,1271000
+276,Tamatave,5,F5,extérieur,Acces vehicule,Maison,1298000
+277,Tamatave,2,T2,intérieur,Aucun,Appartement,222000
+278,Antananarivo,3,T3,extérieur,Acces moto,Maison,1313000
+279,Majunga,4,F4,intérieur,Acces vehicule,Appartement,571000
+280,Tulear,2,T2,intérieur,Aucun,Maison,775000
+281,Antananarivo,3,T3,intérieur,Acces vehicule,Appartement,486000
+282,Diego,2,T2,intérieur,Aucun,Appartement,506000
+283,Tulear,3,T3,intérieur,Acces vehicule,Maison,1164000
+284,Diego,3,T3,intérieur,Acces moto,Maison,765000
+285,Tamatave,5,F5,intérieur,Acces moto,Maison,2203000
+286,Tulear,3,T3,intérieur,Acces vehicule,Maison,1237000
+287,Antananarivo,3,T3,intérieur,Acces moto,Appartement,1033000
+288,Antananarivo,3,T3,intérieur,Acces moto,Appartement,725000
+289,Majunga,4,F4,extérieur,Acces vehicule,Appartement,663000
+290,Diego,2,T2,extérieur,Aucun,Maison,567000
+291,Antananarivo,4,F4,extérieur,Acces vehicule,Appartement,1426000
+292,Antananarivo,3,T3,extérieur,Acces moto,Maison,2637000
+293,Tulear,5,F5,intérieur,Acces vehicule,Appartement,608000
+294,Antananarivo,4,F4,intérieur,Acces moto,Maison,2585000
+295,Antananarivo,5,F5,intérieur,Acces moto,Appartement,1211000
+296,Tulear,5,F5,intérieur,Acces moto,Appartement,544000
+297,Diego,4,F4,intérieur,Acces vehicule,Appartement,303000
+298,Tamatave,2,T2,intérieur,Aucun,Appartement,500000
+299,Majunga,5,F5,intérieur,Acces vehicule,Maison,942000
+300,Majunga,5,F5,intérieur,Acces moto,Appartement,595000
